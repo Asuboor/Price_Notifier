@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script type="text/javascript">
+        function validate() {
+
+            var url = document.getElementById("url_input");
+            var email = document.getElementById("email_input");
+            var range = document.getElementById("price_input");
+
+            if (url.value == "" || email.value == "" || range.value == "") 
+            {
+                alert("fill all the details");
+                return false;
+            }
+            else {
+                return myfunction();
+               
+            }
+        }
+function myfunction(){
+    alert("Submitted Successfully✅");
+}
+// function togglebutton()
+// {
+//     var tag=document.getElementById('invibut');
+//     var button=document.querySelector('button');
+//     button.addEventListener('click',function(){
+//         tag.classList.toggle('invibut');
+//     });
+
+// }
+
+function clear(){
+    document.getElementById("url_input").value=null;
+    document.getElementById("price_input").value=null;
+}
+
+function appear(){
+    document.getElementById("invibut").style.display=appear;
+}
+    </script>
+</head>
+
+<body>
+    <a href="./landingpage.html"><iframe name="hidden_iframe" id="hidden_iframe" style="display: none"
+        onload="if(submitted){window.location='./landingpage.html'}"></iframe></a>      
+    <div class="main">
+        <div class="sidepanel">
+            <img src="./img/hero.png" alt="" class="img1" width="200px" height="190px"><br><br>
+            <h3 class="head1">
+                Set a specific price threshold ,<br>when reached, will trigger an alert
+            </h3>
+            <img src="./img/online shopping.png" alt="" class="img2" width="200px" height="160px"><br><br>
+            <h3 class="head2">Track the prices of multiple products ,<br> or services at the same
+                time
+            </h3>
+            <img src="./img/young man shopping online.png" alt="" class="img3" width="150px" height="150px">
+            <h3 class="head3">Track the prices of <br>a specific product over time
+            </h3>
+        </div>
+        <div class="mainpanel">
+            <img src="./img/Screenshot 2023-01-07 193733.jpg" alt="logo" class="logo">
+            <form id="formid"
+                action="https://docs.google.com/forms/u/4/d/e/1FAIpQLSepAUE7_7EXgi67QwcDEl3QuAx6KpnxXg4-foTLhq8LrahMhg/formResponse"
+                method="post" onsubmit="myfunction();" target="hidden_iframe">
+                <input class="urlinput" id="url_input" type="url" placeholder="🔗 Paste URL" name="entry.206952497">
+                <br><br>
+                <input class="emailinput" id="email_input" type="email" placeholder="📧 Enter Email"
+                    name="entry.186721469">
+                <br><br>
+                <input class="priceinput" id="price_input" type="number" placeholder="&#8377 Target Price"
+                    name="entry.232601769"><br><br>
+                <input type="submit" name="submit" class="searchbutton" onclick="validate();appear()"> 
+                <input type="submit" value="clear" name="clear" class="reset" id="invibut" onclick="clear()">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

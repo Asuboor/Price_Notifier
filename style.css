@@ -1,0 +1,157 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+}
+.sidepanel{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #BED6DD;
+    height: 100vh;
+    width: 25%;
+}
+ .img1{
+position:relative;left: 110px;top: 20px;
+}
+.head1{
+  
+    text-align: center;
+
+    
+
+}
+.img2{
+    position: relative;left: 40px;top:30px
+}
+        .head2{
+            text-align: center;
+            position: relative;bottom: 20px;left: 20px;
+        }
+
+        .img3{
+            position: relative;left: 240px;
+        }
+        .head3{
+            position: relative;bottom: 30px;left: 20px;
+        }
+#logo{
+    padding: 25px;
+    font-size: 30px;
+    padding-bottom: 0;
+    position: relative;top: 50px;
+}
+
+.logo{
+    height: 170px;
+    width: 400px;
+    position: relative;top: 80px;left: 360px;
+}
+#formid{
+    position: relative;bottom: -15vh;left: 300px;
+    border-width: 1px;
+    border-style: solid;
+    padding: 20px;
+    padding-bottom: 45px;
+    border-radius: 10px;
+    background-color: #BED6DD;
+}
+.urlinput{
+    height: 60px;
+    width: 500px;
+    border-radius: 20px;
+    background-color:white;
+    border: 0;
+    text-indent: 20px;
+
+}
+.nameinput{
+    height: 60px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: white;
+    border: 0;
+    text-indent: 20px;
+}
+.emailinput{
+    height: 60px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: white;
+    border: 0;
+    text-indent: 20px;
+
+
+}
+
+.priceinput{
+    height: 60px;
+    width: 500px;
+    border-radius: 20px;
+    background-color: white;
+    border: 0;
+    text-indent: 20px;
+    
+}
+
+.searchbutton{
+    position: relative;top: 20px;left: 100px;
+    height: 40px;
+    width: 150px;
+    background-color: #70A4B1;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+}
+
+.searchbutton:hover{
+    background-color: #DA9EB0;
+}
+
+.urlinput:hover{
+    border-bottom-style: solid;
+    border-color: #ec678f;
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.priceinput:hover{
+    border-bottom-style: solid;
+    border-color: #ec678f;
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.emailinput:hover{
+    border-bottom-style: solid;
+    border-color: #ec678f;
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.nameinput:hover{
+    border-bottom-style: solid;
+    border-color: #ec678f;
+    border-radius: 20px;
+    border-width: 3px;
+}
+
+.reset{
+    position: relative;top: 20px;left: 120px;
+    height: 40px;
+    width: 150px;
+    background-color: #70A4B1;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    
+    
+}
+
+.reset:hover{
+    background-color: #DA9EB0;
+}
+
